@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-проект</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="./src/index.js" type="module"></script>
+    <script src="./node_modules/howler/dist/howler.js"></script>
+</head>
+
+<body>
+
+    <div class="tabs">
+        <div class="tabs__nav">
+            <a class="tabs__link tabs__link_active" href="#content-1">Калькулятор дат</a>
+            <a class="tabs__link" href="#content-2">Таймер</a>
+        </div>
+        <div class="tabs__content">
+            <div class="tabs__pane tabs__pane_show" id="content-1">
+
+                <form id="form-date">
+                    <label for="date1">
+                        <b>Первая дата:</b>
+                        <input type="date" name="date1" id="date1">
+                    </label>
+
+                    <label for="date2">
+                        <b>Вторая дата:</b>
+                        <input type="date" name="date2" id="date2">
+                    </label>
+
+                    <button type="submit">Рассчитать промежуток</button>
+                </form>
+                <p class="message"></p>
+
+            </div>
+            <div class="tabs__pane" id="content-2">
+
+                <div class="block bottom">
+                    <div class="bottom__left">
+                        <div class="bottom__box">
+                            <p class="counter">5</p>
+                            <span class="counter-min">выбери количество минут</span>
+                            <div class="btn__left">
+                                <input id="plus" type="button" value="+">
+                                <input id="minus" type="button" value="-">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom__right">
+                        <p class="counter2 "><span class="countMin">00</span>:<span class="countSec">00</span></p>
+                        <div class="btn__right">
+                            <input class=" item start" type="button" value="Старт">
+                            <input class=" item stop" type="button" value="Стоп">
+                            <input class=" item reset" type="button" value="Сбросить">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
